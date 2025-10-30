@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆柱体弹球碰撞模拟</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>圆柱体弹球碰撞模拟</h1>
+        <div class="controls">
+            <button id="startBtn">开始</button>
+            <button id="pauseBtn">暂停</button>
+            <button id="resetBtn">重置</button>
+            <label for="ballCount">球数量: </label>
+            <input type="range" id="ballCount" min="1" max="50" value="25">
+            <span id="countValue">25</span>
+            <label for="speed">速度: </label>
+            <input type="range" id="speed" min="1" max="10" value="5">
+        </div>
+        <canvas id="simulationCanvas"></canvas>
+        <div class="info">
+            <p>提示: 使用控制面板调整球的数量和速度，观察弹球在圆柱体中的运动和碰撞效果。</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
